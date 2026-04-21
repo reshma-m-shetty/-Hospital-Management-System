@@ -37,53 +37,36 @@ create table patients (
 
 ## 📊 Basic Analysis
 
-### 🔹 Total Patients
+### Total Patients
 
 ```sql
 select count(*) as total_patients from patients;
 ```
-* Gives total number of patients.
+*  total number of patients: 50.
 
 ---
-
-### 🔹 Oldest Patient
-
-```sql
-select * 
-from patients 
-order by date_of_birth asc 
-limit 1;
-```
-* Identifies the oldest patient.
-
----
-
 ## 💰 Revenue Analysis
 
-### 🔹 Total Revenue
+### Total Revenue
 
 ```sql
 select sum(amount) as total_revenue
 from billing
 where payment_status = 'paid';
 ```
-* Calculates total revenue from paid bills.
+*  total revenue from paid bills: 173424.90.
 
 ---
 
 ## 👨‍⚕️ Doctor Analysis
 
-### Doctor with Most Appointments
+### view for doctor performance (appointments count)
 
 ```sql
-select d.first_name, count(a.appointment_id) as total_appointments
-from doctors d
-join appointments a on d.doctor_id = a.doctor_id
-group by d.first_name
-order by total_appointments desc
-limit 1;
+create view doctor_performance as select doctor_id, count(*) as total_appointments
+from appointments group by doctor_id;
 ```
-* Finds the most active doctor.
+* creates views of the performance of doctors as a new table we can access wit easily.
 
 ---
 
@@ -98,7 +81,7 @@ group by day
 order by total desc
 limit 1;
 ```
-* Shows peak hospital activity day.
+* Shows peak hospital activity on Wednesday	with 37 appointments.
 
 ---
 
@@ -114,7 +97,7 @@ from doctors d
 join appointments a on d.doctor_id = a.doctor_id
 group by d.first_name;
 ```
-* Ranks doctors based on workload.
+* Ranks doctors based on workload here Sarah ranks 1st with 46 counts of appointments.
 
 ---
 
@@ -129,7 +112,7 @@ from (
 ) t
 where datediff(appointment_date, prev_date) = 1;
 ```
-* Detects patients visiting on consecutive days.
+* Detects patient number P005 visited on 2023-01-13.
 
 ---
 
