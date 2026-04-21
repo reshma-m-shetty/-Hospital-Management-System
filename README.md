@@ -1,15 +1,12 @@
 # 🏥 Healthcare SQL Analysis
 
 <p align="center">
-  <img src="https://images.openai.com/static-rsc-4/EWep00gspYi67Ka-AYn4OyZi8OpbI5OzLIvI-JTkJTFM6h3DUwNWREizsxf4okmV_Z_rIl50S9A5lhFlxmx5FnqGHlTk0p9WlwMDlTFHSOaxnV3VhqhvNztGFeX3cQco-TTTLCXv-WXrH9kDq83FjOdV-t_IroTzmhujabVTiwNfAAGxGtiWVTsdeA_G0fBR?purpose=fullsize" alt="project banner" width="800"/>
+  <img src="https://images.openai.com/static-rsc-4/EWep00gspYi67Ka-AYn4OyZi8OpbI5OzLIvI-JTkJTFM6h3DUwNWREizsxf4okmV_Z_rIl50S9A5lhFlxmx5FnqGHlTk0p9WlwMDlTFHSOaxnV3VhqhvNztGFeX3cQco-TTTLCXv-WXrH9kDq83FjOdV-t_IroTzmhujabVTiwNfAAGxGtiWVTsdeA_G0fBR?purpose=fullsize" alt="project banner" width="1000"/>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/SQL-MySQL-blue?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Level-Intermediate-orange?style=for-the-badge"/>
-</p>
-
-<p align="center">
   <a href="https://www.linkedin.com/in/reshma-m-2605082ab">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge"/>
   </a>
